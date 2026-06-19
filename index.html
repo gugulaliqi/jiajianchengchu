@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="加减乘除应用隐私权政策">
+  <title>隐私权政策 - 加减乘除</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f5f6f8;
+      --surface: #ffffff;
+      --surface-soft: #f0f2f5;
+      --text: #191b1f;
+      --muted: #626870;
+      --line: #dfe3e8;
+      --accent: #1769e0;
+      --accent-strong: #0d4fae;
+      --success: #137c4b;
+      --shadow: 0 12px 32px rgba(24, 31, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC",
+        "Microsoft YaHei", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      letter-spacing: 0;
+    }
+
+    button,
+    a {
+      font: inherit;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+    }
+
+    .site-header {
+      background: #17191d;
+      color: #ffffff;
+      border-bottom: 1px solid #2e3238;
+    }
+
+    .header-inner,
+    main,
+    .footer-inner {
+      width: min(100% - 32px, 880px);
+      margin-inline: auto;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 76px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      flex: 0 0 42px;
+      width: 42px;
+      height: 42px;
+      border: 1px solid #4b5058;
+      border-radius: 8px;
+      background: #23262b;
+      color: #ffffff;
+      font-size: 17px;
+      font-weight: 750;
+      line-height: 1;
+    }
+
+    .brand-name {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .brand-subtitle {
+      margin: 3px 0 0;
+      color: #b9bec6;
+      font-size: 13px;
+      line-height: 1.25;
+    }
+
+    .language-switch {
+      display: inline-flex;
+      flex: 0 0 auto;
+      padding: 3px;
+      border: 1px solid #444951;
+      border-radius: 8px;
+      background: #23262b;
+    }
+
+    .language-switch button {
+      min-width: 48px;
+      min-height: 34px;
+      padding: 6px 10px;
+      border: 0;
+      border-radius: 5px;
+      background: transparent;
+      color: #c9cdd3;
+      cursor: pointer;
+    }
+
+    .language-switch button[aria-pressed="true"] {
+      background: #ffffff;
+      color: #17191d;
+      font-weight: 700;
+    }
+
+    .language-switch button:focus-visible,
+    a:focus-visible {
+      outline: 3px solid #7fb2ff;
+      outline-offset: 2px;
+    }
+
+    main {
+      padding-block: 56px 72px;
+    }
+
+    .intro {
+      margin-bottom: 30px;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.3;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(30px, 5vw, 44px);
+    }
+
+    .intro-text {
+      max-width: 700px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 22px;
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 14px;
+      margin: 30px 0 38px;
+      padding: 20px;
+      border: 1px solid #bcdcc9;
+      border-radius: 8px;
+      background: #f0faf4;
+      color: #164e32;
+    }
+
+    .summary-icon {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #d8f2e2;
+      color: var(--success);
+      font-weight: 800;
+    }
+
+    .summary strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .summary p {
+      margin: 0;
+    }
+
+    .policy {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    section {
+      padding: 28px 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    section:first-child {
+      border-top: 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 22px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .data-table {
+      width: 100%;
+      margin-top: 16px;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+
+    .data-table th,
+    .data-table td {
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .data-table th {
+      background: var(--surface-soft);
+      font-weight: 700;
+    }
+
+    .contact-box {
+      margin-top: 14px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--accent);
+      background: var(--surface-soft);
+    }
+
+    .contact-box p {
+      margin: 0;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      padding-block: 24px;
+      font-size: 14px;
+    }
+
+    [data-language] {
+      display: none;
+    }
+
+    [data-language].is-active {
+      display: block;
+    }
+
+    @media (max-width: 620px) {
+      .header-inner {
+        min-height: 68px;
+      }
+
+      .brand-subtitle {
+        display: none;
+      }
+
+      main {
+        padding-block: 38px 52px;
+      }
+
+      .summary {
+        grid-template-columns: 32px 1fr;
+        padding: 16px;
+      }
+
+      .summary-icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      section {
+        padding: 23px 20px;
+      }
+
+      .data-table,
+      .data-table tbody,
+      .data-table tr,
+      .data-table th,
+      .data-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .data-table tr + tr {
+        margin-top: 12px;
+      }
+
+      .data-table th {
+        border-bottom: 0;
+      }
+
+      .data-table td + td {
+        border-top: 0;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --page: #121417;
+        --surface: #1b1e22;
+        --surface-soft: #24282d;
+        --text: #f1f3f5;
+        --muted: #b3b8c0;
+        --line: #373c43;
+        --accent: #7fb2ff;
+        --accent-strong: #a7c9ff;
+        --shadow: none;
+      }
+
+      .summary {
+        border-color: #315b45;
+        background: #172a20;
+        color: #b8e8cb;
+      }
+
+      .summary-icon {
+        background: #234a35;
+        color: #9ce0b8;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand" aria-label="加减乘除">
+        <div class="brand-mark" aria-hidden="true">+−×÷</div>
+        <div>
+          <p class="brand-name">加减乘除</p>
+          <p class="brand-subtitle">com.gugulaliqi.jiajianchengchu</p>
+        </div>
+      </div>
+      <div class="language-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-button="zh-CN" aria-pressed="true">中文</button>
+        <button type="button" data-lang-button="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article data-language="zh-CN" class="is-active">
+      <div class="intro">
+        <h1>隐私权政策</h1>
+        <p class="intro-text">
+          本政策说明“加减乘除”应用如何处理用户数据和设备数据。我们重视您的隐私，并尽量以本地处理方式提供计算与历史记录功能。
+        </p>
+        <div class="meta">
+          <span>生效日期：2026年6月19日</span>
+          <span>应用版本：1.0</span>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="summary-icon" aria-hidden="true">✓</div>
+        <div>
+          <strong>核心说明</strong>
+          <p>当前版本不要求注册账号，不包含广告或分析服务，开发者不会收集、出售或共享您的个人数据。</p>
+        </div>
+      </div>
+
+      <div class="policy">
+        <section>
+          <h2>1. 适用范围</h2>
+          <p>
+            本政策适用于 Android 应用“加减乘除”（包名：
+            <strong>com.gugulaliqi.jiajianchengchu</strong>）。
+          </p>
+        </section>
+
+        <section>
+          <h2>2. 应用处理的数据</h2>
+          <p>为实现应用功能，以下内容可能保存在您的设备上：</p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">数据类型</th>
+                <th scope="col">用途</th>
+                <th scope="col">处理方式</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>计算表达式、结果、时间和备注</td>
+                <td>显示和管理计算历史记录</td>
+                <td>保存在应用的本地数据库中</td>
+              </tr>
+              <tr>
+                <td>界面缩放设置</td>
+                <td>记住您选择的显示大小</td>
+                <td>保存在应用的本地设置中</td>
+              </tr>
+              <tr>
+                <td>您主动复制的历史记录</td>
+                <td>执行复制功能</td>
+                <td>仅在您点击复制时写入系统剪贴板；应用不会读取剪贴板内容</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            上述数据不由开发者服务器接收。根据您的 Android 设备和系统备份设置，操作系统或设备提供商可能将应用数据纳入设备备份；该过程由相应系统服务管理，而不是由本应用开发者操作。
+          </p>
+        </section>
+
+        <section>
+          <h2>3. 我们不收集的数据</h2>
+          <p>当前版本不会收集或访问：</p>
+          <ul>
+            <li>姓名、电子邮件地址、电话号码或账号密码；</li>
+            <li>精确位置、通讯录、短信、照片、文件、相机或麦克风；</li>
+            <li>广告标识符、设备跟踪信息或跨应用活动；</li>
+            <li>付款信息、健康信息或其他敏感个人信息；</li>
+            <li>用于广告、用户画像或行为分析的数据。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. 网络与权限</h2>
+          <p>
+            应用清单包含互联网权限，用于 Android WebView 和 Capacitor 运行环境的技术兼容性。当前版本的核心计算、历史记录、搜索和备注功能均可在本地运行，应用不会利用该权限将您的计算内容或个人数据发送给开发者。
+          </p>
+          <p>应用不申请定位、相机、麦克风、通讯录、短信或存储空间等敏感权限。</p>
+        </section>
+
+        <section>
+          <h2>5. 数据共享与出售</h2>
+          <p>
+            开发者不会出售、出租或向第三方共享您的个人数据。当前版本不集成广告平台、第三方分析工具或开发者控制的云端数据服务。
+          </p>
+        </section>
+
+        <section>
+          <h2>6. 数据保留与删除</h2>
+          <p>本地数据会保留在您的设备中，直到您执行以下任一操作：</p>
+          <ul>
+            <li>在应用内删除相应历史记录或备注；</li>
+            <li>通过 Android 系统设置清除应用数据；</li>
+            <li>卸载本应用。</li>
+          </ul>
+          <p>
+            如果设备启用了系统备份，备份副本的保留和删除由 Android 或设备提供商的备份设置决定。
+          </p>
+        </section>
+
+        <section>
+          <h2>7. 数据安全</h2>
+          <p>
+            应用采用 Android 应用沙箱和本地存储机制保护数据。请注意，任何存储方式都无法保证绝对安全；您应妥善保护设备解锁凭据，并谨慎使用系统剪贴板。
+          </p>
+        </section>
+
+        <section>
+          <h2>8. 儿童隐私</h2>
+          <p>
+            本应用不以收集儿童个人信息为目的，也不会要求用户提交年龄或身份信息。由于开发者不收集个人数据，因此不会有意收集儿童的个人数据。
+          </p>
+        </section>
+
+        <section>
+          <h2>9. 政策更新</h2>
+          <p>
+            如果应用功能、数据处理方式或法律要求发生变化，我们可能更新本政策。更新后的政策将在本页面公布，并修改生效日期。
+          </p>
+        </section>
+
+        <section>
+          <h2>10. 联系我们</h2>
+          <p>如果您对本政策或应用的数据处理方式有疑问，请通过 Google Play 商品详情页面中公布的开发者联系方式与我们联系。</p>
+          <div class="contact-box">
+            <p><strong>应用：</strong>加减乘除</p>
+            <p><strong>包名：</strong>com.gugulaliqi.jiajianchengchu</p>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <article data-language="en" lang="en">
+      <div class="intro">
+        <h1>Privacy Policy</h1>
+        <p class="intro-text">
+          This policy explains how the Add, Subtract, Multiply &amp; Divide app handles user and device data. We value your privacy and process calculation data locally whenever possible.
+        </p>
+        <div class="meta">
+          <span>Effective date: June 19, 2026</span>
+          <span>App version: 1.0</span>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="summary-icon" aria-hidden="true">✓</div>
+        <div>
+          <strong>Key points</strong>
+          <p>The current version requires no account, contains no ads or analytics, and the developer does not collect, sell, or share your personal data.</p>
+        </div>
+      </div>
+
+      <div class="policy">
+        <section>
+          <h2>1. Scope</h2>
+          <p>
+            This policy applies to the Android app Add, Subtract, Multiply &amp; Divide
+            (package name: <strong>com.gugulaliqi.jiajianchengchu</strong>).
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Data Processed by the App</h2>
+          <p>The following information may be stored on your device to provide app features:</p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Data</th>
+                <th scope="col">Purpose</th>
+                <th scope="col">Processing</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Expressions, results, timestamps, and notes</td>
+                <td>Display and manage calculation history</td>
+                <td>Stored in the app's local database</td>
+              </tr>
+              <tr>
+                <td>Interface scale setting</td>
+                <td>Remember your chosen display size</td>
+                <td>Stored in the app's local settings</td>
+              </tr>
+              <tr>
+                <td>History you choose to copy</td>
+                <td>Provide the copy function</td>
+                <td>Written to the system clipboard only when you choose Copy; the app does not read clipboard contents</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            The developer does not receive this data on a server. Depending on your Android device and backup settings, the operating system or device provider may include app data in a device backup. That process is managed by the relevant system service, not by the app developer.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Data We Do Not Collect</h2>
+          <p>The current version does not collect or access:</p>
+          <ul>
+            <li>Names, email addresses, phone numbers, account credentials, or passwords;</li>
+            <li>Precise location, contacts, messages, photos, files, camera, or microphone;</li>
+            <li>Advertising identifiers, device tracking data, or cross-app activity;</li>
+            <li>Payment, health, or other sensitive personal information;</li>
+            <li>Data for advertising, profiling, or behavioral analytics.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. Network Access and Permissions</h2>
+          <p>
+            The app manifest includes internet permission for technical compatibility with the Android WebView and Capacitor runtime. The current version's calculation, history, search, and note features operate locally, and the app does not use this permission to send your calculations or personal data to the developer.
+          </p>
+          <p>The app does not request sensitive permissions for location, camera, microphone, contacts, messages, or device storage.</p>
+        </section>
+
+        <section>
+          <h2>5. Sharing and Sale of Data</h2>
+          <p>
+            The developer does not sell, rent, or share your personal data with third parties. The current version contains no advertising platform, third-party analytics service, or developer-operated cloud data service.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Retention and Deletion</h2>
+          <p>Local data remains on your device until you:</p>
+          <ul>
+            <li>Delete the relevant history entry or note within the app;</li>
+            <li>Clear the app's data through Android system settings; or</li>
+            <li>Uninstall the app.</li>
+          </ul>
+          <p>
+            If system backup is enabled, retention and deletion of backup copies are controlled by Android or your device provider's backup settings.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Data Security</h2>
+          <p>
+            The app relies on Android's application sandbox and local storage protections. No storage method can guarantee absolute security, so please protect your device credentials and use the system clipboard carefully.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Children's Privacy</h2>
+          <p>
+            The app is not designed to collect children's personal information and does not ask users to provide age or identity details. Because the developer does not collect personal data, the app does not knowingly collect personal data from children.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. Changes to This Policy</h2>
+          <p>
+            We may update this policy if app features, data practices, or legal requirements change. The revised policy will be published on this page with an updated effective date.
+          </p>
+        </section>
+
+        <section>
+          <h2>10. Contact Us</h2>
+          <p>
+            If you have questions about this policy or the app's data practices, please contact us using the developer contact details shown on the app's Google Play store listing.
+          </p>
+          <div class="contact-box">
+            <p><strong>App:</strong> Add, Subtract, Multiply &amp; Divide</p>
+            <p><strong>Package:</strong> com.gugulaliqi.jiajianchengchu</p>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span data-language="zh-CN" class="is-active">© 2026 加减乘除。保留所有权利。</span>
+      <span data-language="en" lang="en">© 2026 Add, Subtract, Multiply &amp; Divide. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const buttons = document.querySelectorAll("[data-lang-button]");
+      const languageBlocks = document.querySelectorAll("[data-language]");
+
+      function setLanguage(language) {
+        document.documentElement.lang = language;
+        document.title = language === "zh-CN"
+          ? "隐私权政策 - 加减乘除"
+          : "Privacy Policy - Add, Subtract, Multiply & Divide";
+
+        languageBlocks.forEach((block) => {
+          block.classList.toggle("is-active", block.dataset.language === language);
+        });
+
+        buttons.forEach((button) => {
+          button.setAttribute(
+            "aria-pressed",
+            String(button.dataset.langButton === language)
+          );
+        });
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          setLanguage(button.dataset.langButton);
+        });
+      });
+
+      const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
+      if (requestedLanguage === "en") {
+        setLanguage("en");
+      }
+    })();
+  </script>
+</body>
+</html>
